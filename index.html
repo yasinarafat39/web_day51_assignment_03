@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 03</title>
+
+    <!-- Google font (manrope) CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/bf73c86e77.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- tailwind CSS && Daisy Ui CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              project_Pri: "#ABEF5F",
+              project_Pri_2: "rgba(171, 239, 95, 0.5)",
+              dark_1: "#212121",
+              dark_2: "#494949",
+              dark_3: "#737373",
+              header_color: "#F5F5F5",
+              section_bg_1: "#F9F9F9",
+              section_bg_2: "#F4F4F4",
+              placeholder_color: "#A0A0A0",
+              footer_color: "#1C1C1C",
+            },
+            fontFamily: {
+              manrope: '"Manrope", sans-serif;',
+            },
+            spacing: {
+              project_width: "1440px",
+              content_section_width: "1170px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="font-manrope max-w-project_width border-2 border-rose-500 mx-auto"
+  >
+    <!-- header section -->
+    <header class="lg:px-[135px] bg-header_color">
+      <!-- navbar here -->
+      <nav class="py-8 lg:pt-12 lg:pb-10 border-2">
+        <div class="navbar justify-between p-0">
+          
+          <div class=" justify-start ">
+            <div class="dropdown">
+               
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-[#737373]"
+              >
+              <li><a class="text-dark_2 font-extrabold hover:bg-transparent">Home</a></li>
+              <li><a class="hover:bg-transparent">Services</a></li>
+              <li><a class="hover:bg-transparent">Portfolio</a></li>
+              <li><a class="hover:bg-transparent">Blogs</a></li>
+              <li><a class="hover:bg-transparent">Contact Us</a></li>
+              </ul>
+            </div>
+            <button class=" flex items-center gap-2 bg-transparent border-none h-auto">
+              <p class="w-8 h-8 bg-project_Pri  text-base rounded-full flex justify-center items-center"><i class="fa-solid fa-arrow-right-long -rotate-45"></i></p>
+              <a class="text-[32px] font-extrabold">Rinterio</a>
+            </button>
+          </div>
+
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-[#737373]">
+              <li><a class="text-dark_2 font-extrabold hover:bg-transparent">Home</a></li>
+              <li><a class="hover:bg-transparent">Services</a></li>
+              <li><a class="hover:bg-transparent">Portfolio</a></li>
+              <li><a class="hover:bg-transparent">Blogs</a></li>
+              <li><a class="hover:bg-transparent">Contact Us</a></li>
+            </ul>
+          </div>
+
+
+          <!-- nav end -->
+          <div class="flex justify-end gap-4"> 
+
+            <div class="drawer">
+                <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+
+                <div class="drawer-content rounded-full">
+                  <!-- Page content here --> 
+                  
+                  <label for="my-drawer" class="btn drawer-button p-3 text-dark_3 border-[#E9E9E9] border-2  rounded-full bg-white flex items-center justify-center lg:hidden cursor-pointer">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg> 
+                  </label>
+ 
+                </div>
+                <div class="drawer-side">
+                  <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+                  <ul class="menu bg-base-200 text-base-content min-h-full w-[70%] p-4">
+                    <!-- Sidebar content here --> 
+                    <li>
+                      <button class=" flex items-center gap-2 bg-transparent border-none h-auto">
+                        <p class="w-8 h-8 bg-project_Pri  text-base rounded-full flex justify-center items-center"><i class="fa-solid fa-arrow-right-long -rotate-45"></i></p>
+                        <a class="text-[32px] font-extrabold">Rinterio</a>
+                      </button> 
+                    </li>
+                    <li><a class="text-dark_2 font-extrabold hover:bg-transparent">Home</a></li>
+                    <li><a class="hover:bg-transparent">Services</a></li>
+                    <li><a class="hover:bg-transparent">Portfolio</a></li>
+                    <li><a class="hover:bg-transparent">Blogs</a></li>
+                    <li><a class="hover:bg-transparent">Contact Us</a></li> 
+                  </ul>
+                </div>
+            </div>
+ 
+
+            <div class="hidden  lg:flex items-center gap-4">
+
+              <button class="btn hover:bg-white text-2xl text-[#737373] bg-white rounded-full px-3 py-3 border-[#E9E9E9]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+              </svg>
+              </button>
+              <button class="btn hover:bg-white text-2xl text-[#737373] bg-white rounded-full px-3 py-3 border-[#E9E9E9]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+              </svg>
+              </i></button>
+  
+              <button class="btn flex items-center gap-2 bg-project_Pri px-5 py-[15px] h-auto rounded-full hover:bg-project_Pri_2 hover:border-project_Pri_2">
+                <a class="text-xl font-extrabold">Book Consult</a>
+                <p class="w-8 h-8 bg-dark_1 text-white text-base rounded-full flex justify-center items-center"><i class="fa-solid fa-arrow-right-long -rotate-45"></i></p>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main section -->
+    <main class=""></main>
+
+    <!-- footer section -->
+    <footer class=""></footer>
+  </body>
+</html>
