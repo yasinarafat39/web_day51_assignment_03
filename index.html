@@ -49,6 +49,9 @@
               project_width: "1440px",
               content_section_width: "1170px",
             },
+            backgroundImage: {
+              email_bg : "url('./assets/bg.jpg')",
+            },
           },
         },
       };
@@ -547,11 +550,75 @@
            </div>
          </section>
 
-
-
     </main>
 
 
+
+
+    
+
+        <!-- send mail section -->
+         <section class="py-8 px-6 lg:px-0 lg:py-[100px] bg-email_bg bg-no-repeat bg-cover bg-center">
+
+         <div class="lg:py[100px] lg:max-w-[970px] mx-auto border-2 ">
+           
+          <!-- header content of this section -->
+           <div class="flex justify-center lg:justify-center mb-4">
+            <button class="flex gap-2 bg-project_Pri_2 rounded-full px-4 py-2 h-auto text-[#494949] font-bold text border-none">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+              Let’s Connect
+            </button>
+          </div>
+ 
+          <h2 class="text-2xl lg:text-[40px] font-bold lg:font-extrabold text-dark_1 mb-4 lg:mb-6 text-center lg:leading-[60px]">Let’s Discuss Next Project</h2>
+
+          <p class="mb-6 lg:mb-8 lg:max-w-[678px] mx-auto text-sm lg:text-base font-medium leading-7 text-dark_2 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+ 
+          <!-- form -->
+          <form class="lg:grid grid-cols-1 lg:grid-cols-2 gap-6 space-y-6 lg:space-y-0"> 
+            <!-- first name -->
+            <input
+              type="text"
+              placeholder="First Name*"
+              class="input input-md w-full rounded-full text-[#A0A0A0] px-5 py-[21px] font-medium block text-[16px] focus:border-none"
+              required />
+            <!-- last name -->
+            <input
+              type="text"
+              placeholder="Last Name*"
+              class="input input-md w-full rounded-full text-[#A0A0A0] px-5 py-[21px] font-medium block text-[16px] focus:border-none"
+              required />
+            <!-- Phone number -->
+            <input
+              type="number"
+              placeholder="Phone Number*"
+              class="input input-md w-full rounded-full text-[#A0A0A0] px-5 py-[21px] font-medium block text-[16px] focus:border-none"
+              required />
+            <!-- Email -->
+            <input
+              type="email"
+              placeholder="Email Number*"
+              class="input input-md w-full rounded-full text-[#A0A0A0] px-5 py-[21px] font-medium block text-[16px] focus:border-none"
+              required />
+
+            <!-- messages -->
+            <textarea class="textarea w-full rounded-[32px] text-[#A0A0A0] h-[240px] lg:col-span-2 resize-none block text-[16px] focus:border-none" placeholder="Write your message here"></textarea>
+            
+            <!-- submit button -->
+            <button type="submit" class=" col-span-2 btn w-full flex items-center gap-2 bg-project_Pri py-[15px] h-auto rounded-full hover:bg-project_Pri_2 hover:border-project_Pri_2">
+              <a class="text-xl font-extrabold">Book Consult</a>
+              <p class="w-8 h-8 bg-dark_1 text-white text-base rounded-full flex justify-center items-center"><i class="fa-solid fa-arrow-right-long -rotate-45"></i></p>
+            </button>
+          </form>
+
+          
+         </div>
+
+         </section>
+ 
 
     <!-- footer section -->
     <footer class=""></footer>
