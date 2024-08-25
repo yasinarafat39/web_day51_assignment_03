@@ -52,13 +52,16 @@
             backgroundImage: {
               email_bg : "url('./assets/bg.jpg')",
             },
+            boxShadow: {
+              banner_shadow: "30px 30px #212121",
+            },
           },
         },
       };
     </script>
   </head>
   <body
-    class="font-manrope max-w-project_width border-2 border-rose-500 mx-auto bg-section_bg_2"
+    class="font-manrope max-w-project_width mx-auto bg-section_bg_2"
   >
     <!-- header section -->
     <header class="px-5 lg:px-[135px] bg-white">
@@ -181,10 +184,10 @@
     </header>
 
     <!-- main section -->
-    <main class="mx-5 lg:mx-0">
+    <main>
       
       <!-- about us section -->
-        <section class=" max-w-content_section_width lg:mx-auto flex flex-col lg:flex-row  justify-between gap-9 my-8 lg:my-[100px]"> 
+        <section class="mx-5    max-w-content_section_width lg:mx-auto flex flex-col lg:flex-row  justify-between gap-9 my-8 lg:my-[100px]"> 
         
         <!-- text section -->
          <div class="flex-1 relative ">
@@ -233,7 +236,7 @@
         </section>
 
       <!-- counting section -->
-        <section class="grid grid-cols-1 lg:grid-cols-4 lg:gap-6 bg-white  p-6 lg:p-8 mb-8 lg:mb-[100px] rounded-3xl max-w-content_section_width lg:mx-auto">
+        <section class="mx-5    max-w-content_section_width lg:mx-auto grid grid-cols-1 lg:grid-cols-4 lg:gap-6 bg-white  p-6 lg:p-8 mb-8 lg:mb-[100px] rounded-3xl ">
           <!-- counting 01 -->
           <div class="text-center text-dark_3 p-5 lg:p-6">
             <div class="flex justify-center">
@@ -273,7 +276,7 @@
         </section>
 
       <!-- How we works section -->
-        <section class="max-w-content_section_width lg:mx-auto lg:mb-[100px]">
+        <section class="mx-5   max-w-content_section_width lg:mx-auto lg:mb-[100px]">
 
           <div class="flex justify-center lg:justify-center mb-4">
             <button class="flex gap-2 bg-white rounded-full px-4 py-2 h-auto text-[#494949] font-bold text border-none">
@@ -318,7 +321,7 @@
 
 
       <!-- our Latest works section -->
-        <section class="lg:bg-white lg:px-[135px] py-8 lg:py-[100px] ">
+        <section class="mx-5 lg:mx-0  lg:bg-white lg:px-[135px] py-8 lg:py-[100px] ">
            
 
             <!-- header content of this section -->
@@ -401,7 +404,7 @@
 
 
         <!-- Article and news section -->
-         <section class="max-w-content_section_width lg:mx-auto mb-8 lg:my-[100px]">
+         <section class="mx-5    max-w-content_section_width lg:mx-auto mb-8 lg:my-[100px]">
 
           <!-- header content of this section -->
           <div class="flex justify-center lg:justify-center mb-4">
@@ -549,11 +552,109 @@
            </div>
          </section>
 
+      
+      <!-- unique section -->
+       <section class="mx-5    max-w-content_section_width lg:mx-auto mb-8 lg:my-[100px]">
+        <!-- header content of this section -->
+        <div class="flex justify-center lg:justify-center mb-4">
+          <button class="flex gap-2 bg-white rounded-full px-4 py-2 h-auto text-[#494949] font-bold text border-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+            </svg>
+            Discover the key
+          </button>
+        </div>
+
+        <h2 class="text-2xl lg:text-[40px] font-bold lg:font-extrabold text-dark_1 mb-4 lg:mb-6 text-center lg:leading-[60px]">Why Choose Us</h2>
+
+        <p class="mb-6 lg:mb-8 lg:max-w-[678px] mx-auto text-sm lg:text-base font-medium leading-7 text-dark_2 text-center">Discover the key benefits of working with us, from personalized design to timely delivery and expert support.
+        </p>
+
+          
+        <div class="lg:grid grid-cols-1 lg:grid-cols-3 lg:gap-14">
+          <!-- left text -->
+          <div>
+
+            <!-- part 1 -->
+            <div class="flex lg:items-start lg:justify-end text-right gap-5 lg:gap-6 py-5 lg:pt-8 rounded-2xl ">
+              <div class="">
+                <h2 class="font-extrabold text-base lg:text-xl mb-[10px]">Budget Estimation</h2>
+                <p class="font-medium leading-7 text-dark_3">Get a clear and accurate budget estimate to plan your project confidently.</p>
+              </div>
+
+              <img src="./assets/unique-part-1.png" alt="unique section icon"  class="w-10 lg:w-16 h-10 lg:h-auto">
+            </div>
+
+            <!-- part 2 -->
+            <div class="flex lg:items-start lg:justify-end text-right gap-5 lg:gap-6 py-5 lg:pt-8 rounded-2xl ">  
+              <div class="">
+                <h2 class="font-extrabold text-base lg:text-xl mb-[10px]">Design Your Own</h2>
+                <p class="font-medium leading-7 text-dark_3">Customize your space with our tools, allowing you to bring your unique vision to life.</p>
+              </div>
+
+              <img src="./assets/unique-part-2.png" alt="unique section icon"  class="w-10 lg:w-16 h-10 lg:h-auto">
+            </div>
+
+            <!-- part 3 -->
+            <div class="flex lg:items-start lg:justify-end text-right gap-5 lg:gap-6 py-5 lg:pt-8 rounded-2xl ">   
+              <div class="">
+                <h2 class="font-extrabold text-base lg:text-xl mb-[10px]">Free Samples</h2>
+                <p class="font-medium leading-7 text-dark_3">Explore material options with free samples to ensure the perfect fit for your design.</p>
+              </div>
+
+              <img src="./assets/unique-part-3.png" alt="unique section icon"  class="w-10 lg:w-16 h-10 lg:h-auto">
+            </div> 
+
+          </div>
+
+        <!-- center image -->
+          <div>
+            <img src="./assets/unique-part.jpg" alt="unique part banner" class="shadow-banner_shadow w-[92%]">
+          </div>
+
+        <!-- right text -->
+          <div>
+
+            <!-- part 4 -->
+            <div class="flex lg:items-start gap-5 lg:gap-6 py-5 lg:pt-8 rounded-2xl  mt-12 lg:mt-0"> 
+              <img src="./assets/unique-part-4.png" alt="unique section icon"  class="w-10 lg:w-16 h-10 lg:h-auto">
+           
+              <div class="">
+                <h2 class="font-extrabold text-base lg:text-xl mb-[10px]">Free Consultation</h2>
+                <p class="font-medium leading-7 text-dark_3">Discuss your project with our experts for personalized advice guidance at no cost.</p>
+              </div>
+            </div>
+
+            <!-- part 5 -->
+            <div class="flex lg:items-start gap-5 lg:gap-6 py-5 lg:pt-8 rounded-2xl "> 
+              <img src="./assets/unique-part-5.png" alt="unique section icon"  class="w-10 lg:w-16 h-10 lg:h-auto">
+           
+              <div class="">
+                <h2 class="font-extrabold text-base lg:text-xl mb-[10px]">Quick Delivery</h2>
+                <p class="font-medium leading-7 text-dark_3">Experience prompt delivery to keep your project on schedule without delays.</p>
+              </div>
+            </div>
+
+            <!-- part 6 -->
+            <div class="flex lg:items-start gap-5 lg:gap-6 py-5 lg:pt-8 rounded-2xl "> 
+              <img src="./assets/unique-part-6.png" alt="unique section icon"  class="w-10 lg:w-16 h-10 lg:h-auto">
+           
+              <div class="">
+                <h2 class="font-extrabold text-base lg:text-xl mb-[10px]">Share Design</h2>
+                <p class="font-medium leading-7 text-dark_3">Effortlessly share your design ideas with our team for seamless collaboration.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+       </section>
 
 
-      <!-- pricing section -->
-       <section class="">
-        <div class="max-w-content_section_width lg:mx-auto mb-8 lg:my-[100px]">  
+      <!-- pricing section (unique section) -->
+       <section class="mx-5    max-w-content_section_width lg:mx-auto mb-8 lg:my-[100px]">
+          
             <!-- header content of this section -->
           <div class="flex justify-center lg:justify-center mb-4">
             <button class="flex gap-2 bg-project_Pri_2 rounded-full px-4 py-2 h-auto text-[#494949] font-bold text border-none">
@@ -575,7 +676,7 @@
                     <h3 class="mb-4 text-2xl font-semibold">Basic Package</h3>
                     <p class="font-medium leading-[26px] text-dark_3">Essential design services for those seeking quality on a budget and looking for you.</p>
                     <div class="flex justify-center items-baseline my-8">
-                        <span class="mr-2 text-5xl font-extrabold">$300</span>
+                        <span class="mr-2 text-5xl font-extrabold">$299</span>
                         <span class="text-dark_3">/month</span>
                     </div>
                     <!-- List -->
@@ -694,15 +795,12 @@
                     </button>
                 </div>
             </div>
-        </div>
+         
       </section>
 
 
-    </main>
-
-  
       <!-- send mail section -->
-      <section class="py-8 px-6 lg:px-0 lg:py-[100px] bg-email_bg bg-no-repeat bg-cover bg-center">
+      <section class="py-8 px-5 lg:px-0 lg:py-[100px] bg-email_bg bg-no-repeat bg-cover bg-center">
 
          <div class="lg:py[100px] lg:max-w-[970px] mx-auto">
            
@@ -763,7 +861,7 @@
 
       </section>
  
-
+    </main>
  
     <!-- footer section -->
     <footer class=" py-[72px] lg:py-[100px] p-8 lg:p-0 bg-footer_color">
